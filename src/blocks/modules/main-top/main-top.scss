@@ -1,0 +1,98 @@
+.main-top {
+    padding: 167px 0 67px;
+    @media screen and (max-width: 600px) {
+        padding: 106px 0 77px;
+    }
+    &__info {
+        position: relative;
+        z-index: 2;
+        width: 55%;
+        @media screen and (max-width: 1199px) {
+            width: 60%;
+        }
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 83px;
+
+        @media screen and (max-width: 991px) {
+            max-width: 500px;
+            margin-bottom: 36px;
+        }
+
+        @media screen and (max-width: 600px) {
+            max-width: 300px;
+        }
+    }
+
+    &__list {
+        max-width: 600px;
+        @media screen and (max-width: 1199px) {
+            max-width: 400px;
+        }
+        @media screen and (max-width: 991px) {
+            max-width: 100%;
+            margin-bottom: 35px;
+        }
+        @media screen and (max-width: 600px) {
+            padding-left: 20px;
+        }
+        &-title {
+            font-size: 28px;
+            line-height: 120%;
+            font-weight: 700;
+            margin-bottom: 27px;
+            @media screen and (max-width: 991px) {
+                margin-bottom: 17px;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 20px;
+            }
+        }
+
+        &-item {
+            font-size: 20px;
+            line-height: 120%;
+            list-style-type: disc;
+            margin-bottom: 20px;
+            @media screen and (max-width: 991px) {
+                margin-bottom: 16px;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 16px;
+            }
+
+            &::marker {
+                font-size: 24px;
+                line-height: 120%;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: -12%;
+        width: auto;
+        height: 100%;
+
+        @media screen and (max-width: 991px) {
+            position: static;
+            right: 0;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+}
